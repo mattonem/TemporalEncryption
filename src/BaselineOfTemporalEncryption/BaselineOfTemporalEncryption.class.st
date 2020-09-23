@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfTokenize,
+	#name : #BaselineOfTemporalEncryption,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfTokenize
+	#category : #BaselineOfTemporalEncryption
 }
 
 { #category : #baselines }
-BaselineOfTokenize >> baseline: spec [
+BaselineOfTemporalEncryption >> baseline: spec [
 	<baseline>
 	spec
 		for: #common

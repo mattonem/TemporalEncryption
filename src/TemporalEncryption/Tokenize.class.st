@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'key'
 	],
-	#category : #'Tokenize-Core'
+	#category : #'TemporalEncryption-Core'
 }
 
 { #category : #'instance creation' }
@@ -40,7 +40,7 @@ Tokenize >> decode: aCollection timeOut: aDuration [
 				do: [ ret := false ].
 			ret ]
 		ifFound: [ :theMinute | self decode: aCollection time: theMinute ]
-		ifNone: [ TokCannotDecode signal ]
+		ifNone: [ TECouldNotDecode signal ]
 ]
 
 { #category : #processing }

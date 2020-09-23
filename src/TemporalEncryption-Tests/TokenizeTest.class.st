@@ -4,7 +4,7 @@ A TokenizeTest is a test class for testing the behavior of Tokenize
 Class {
 	#name : #TokenizeTest,
 	#superclass : #TestCase,
-	#category : #'Tokenize-Tests'
+	#category : #'TemporalEncryption-Tests'
 }
 
 { #category : #tests }
@@ -17,7 +17,7 @@ TokenizeTest >> testTokenize [
 	obj := d decode: tok.
 	self assert: obj equals: 'Lige is strange'.
 	tok := d encode: 'Lige is strange' time: (DateAndTime now - 2 hours).
-	self should: [d decode: tok ] raise: TokCannotDecode.
+	self should: [d decode: tok ] raise: TECouldNotDecode.
 	
 	
 ]
